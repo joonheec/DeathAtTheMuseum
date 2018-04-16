@@ -191,7 +191,7 @@ Transform:
   m_LocalScale: {x: 8.006977, y: 8.006976, z: 8.006976}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &25878787
 BoxCollider2D:
@@ -458,7 +458,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663272339944916, guid: d0107128cbab34b228e290aa01eec439, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0107128cbab34b228e290aa01eec439, type: 2}
@@ -522,6 +522,26 @@ Prefab:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114184681297900178, guid: 2eb1468f138854b15a37f59f924425e7,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Bring me my bottle, and maybe we can start talking.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184681297900178, guid: 2eb1468f138854b15a37f59f924425e7,
+        type: 2}
+      propertyPath: dialogue.altSentences.Array.data[0]
+      value: Are you sure this is my bottle?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184681297900178, guid: 2eb1468f138854b15a37f59f924425e7,
+        type: 2}
+      propertyPath: dialogue.altSentences.Array.data[1]
+      value: Youre right this is my bottle!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114267560868269912, guid: 2eb1468f138854b15a37f59f924425e7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2eb1468f138854b15a37f59f924425e7, type: 2}
   m_IsPrefabParent: 0
@@ -574,52 +594,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4460807407396228, guid: b6686f8954435444fadb54c3c0519641, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6686f8954435444fadb54c3c0519641, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &807011971
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005835618082580, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5827465cb27ad4b31ba199c6144078af, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1079411962
 Prefab:

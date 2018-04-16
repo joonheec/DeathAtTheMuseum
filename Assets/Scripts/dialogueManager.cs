@@ -27,17 +27,20 @@ public class dialogueManager : MonoBehaviour {
 		Debug.Log ("started");
 		animator.SetBool ("IsOpen", true);
 		nameText.text = dialogue.name;
+		Debug.Log (sentences);
 		sentences.Clear ();
-		Debug.Log ("cleared");
+		Debug.Log ("starting convo");
 
 		if (playerController.hasKettle) {
 			foreach (string altSentence in dialogue.altSentences) {
 				sentences.Enqueue (altSentence);
+				Debug.Log ("kettle convo");
 			}
-			Debug.Log ("started");
+
 		} else {
 			foreach (string sentence in dialogue.sentences) {
 				sentences.Enqueue (sentence);
+				Debug.Log (sentences);
 			}
 		}
 		DisplayNextSentence ();

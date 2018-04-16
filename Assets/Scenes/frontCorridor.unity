@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114184681297900178, guid: 2eb1468f138854b15a37f59f924425e7,
+        type: 2}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1235998334}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2eb1468f138854b15a37f59f924425e7, type: 2}
   m_IsPrefabParent: 0
@@ -400,6 +405,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e19beaed37e3e4bf49ceedcfe2ce4049, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1235998334 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114468369667725016, guid: e19beaed37e3e4bf49ceedcfe2ce4049,
+    type: 2}
+  m_PrefabInternal: {fileID: 1205206446}
+  m_Script: {fileID: 11500000, guid: 25e588036dc21490481dbff2f7aac4bd, type: 3}
 --- !u!114 &1320983030 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114851387420334436, guid: 77bf7de70883b4853b2e8eb07cbe1998,

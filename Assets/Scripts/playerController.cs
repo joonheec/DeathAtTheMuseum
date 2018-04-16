@@ -5,11 +5,19 @@ using UnityEngine;
 public class playerController : MonoBehaviour {
 	
 	public float moveSpeed;
-	private bool hasKettle = false;
+	public static bool hasKettle = false;
 	private Animator anim;
+	private static bool playerExists;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		if (!playerExists) {
+			playerExists = true;
+			DontDestroyOnLoad (transform.gameObject);
+
+		} else {
+			Destroy (gameObject);
+		}
 		
 	}
 	
@@ -27,10 +35,15 @@ public class playerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col) {
 		if (col.gameObject.tag == "Clue") {
 			Debug.Log ("Clue collision");
-			Destroy (col.gameObject);
+			Debug.Log (col.gameObject);
 			hasKettle = true;
 			Debug.Log ("Has Kettle");
+			Destroy(col.gameObject);
+
+			Debug.Log ("Destroyed");
+
 
 		}
 	} 
 }
+	

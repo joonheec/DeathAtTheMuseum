@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Players
   - NPCs
+  - Clue
   layers:
   - Default
   - TransparentFX
@@ -48,6 +49,9 @@ TagManager:
     locked: 0
   - name: Building
     uniqueID: 1033740505
+    locked: 0
+  - name: item
+    uniqueID: 1052892081
     locked: 0
   - name: Player
     uniqueID: 441944607

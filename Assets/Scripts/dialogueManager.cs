@@ -8,22 +8,37 @@ public class dialogueManager : MonoBehaviour {
 	public Text nameText;
 	public Text dialogueText;
 	public Animator animator;
-	private Queue<string> sentences;
+	private static Queue<string> sentences;
+	private static Queue<string> altSentences;
+//	public playerController controller;
 
 
 
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string> ();
+	
+//		altSentences = new Queue<string> ();
 	}
 
 
+
 	public void StartDialogue(Dialogue dialogue){
+		Debug.Log ("started");
 		animator.SetBool ("IsOpen", true);
 		nameText.text = dialogue.name;
 		sentences.Clear ();
-		foreach (string sentence in dialogue.sentences) {
-			sentences.Enqueue (sentence);
+		Debug.Log ("cleared");
+
+		if (playerController.hasKettle) {
+			foreach (string altSentence in dialogue.altSentences) {
+				sentences.Enqueue (altSentence);
+			}
+			Debug.Log ("started");
+		} else {
+			foreach (string sentence in dialogue.sentences) {
+				sentences.Enqueue (sentence);
+			}
 		}
 		DisplayNextSentence ();
 	}
@@ -37,7 +52,7 @@ public class dialogueManager : MonoBehaviour {
 		}
 		string sentence = sentences.Dequeue ();
 		StopAllCoroutines ();
-		StartCoroutine (TypeSentence (sentence));
+		StartCoroutine(TypeSentence (sentence));
 //		dialogueText.text = sentence;
 
 	}

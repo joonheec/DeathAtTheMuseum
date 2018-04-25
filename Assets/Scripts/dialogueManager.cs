@@ -40,7 +40,7 @@ public class dialogueManager : MonoBehaviour {
 		} else {
 			foreach (string sentence in dialogue.sentences) {
 				sentences.Enqueue (sentence);
-				Debug.Log (sentences);
+				Debug.Log (sentence.ToString());
 			}
 		}
 		DisplayNextSentence ();

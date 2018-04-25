@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/front.unity
     guid: b3093f2fa61e148aa80e3cb16a2151f2
+  - enabled: 1
+    path: Assets/Scenes/lobby.unity
+    guid: d190b500793264b759895cfb7190f5c9
+  - enabled: 1
+    path: Assets/Scenes/blueHall.unity
+    guid: f91a515a78c0a4a1f85d22f12cfe79d2

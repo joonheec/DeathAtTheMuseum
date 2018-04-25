@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Maine.unity
+- path: Assets/Scenes/blueHall.unity
   isLoaded: 1
   isActive: 1
